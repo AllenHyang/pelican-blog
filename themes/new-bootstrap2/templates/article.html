@@ -24,7 +24,7 @@
 
         {{ article.content }}
         </div><!-- /.entry-content -->
-        {% if DISQUS_SITENAME %}
+       <!-- {% if DISQUS_SITENAME %}
         <div class="comments">
         <h2>Comments !</h2>
             <div id="disqus_thread"></div>
@@ -39,8 +39,12 @@
               })();
             </script>
         </div>
-        {% endif %}
+        {% endif %}-->
+<div class="comments">
+{% include 'disqus_script.html'%}
+
     </article>
+
 </section>
 </div>
 </div>
