@@ -25,8 +25,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
 )
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('My sina weibo', 'http://weibo.com/u/1644145160'),
+          )
 
 DEFAULT_PAGINATION = 10
 
