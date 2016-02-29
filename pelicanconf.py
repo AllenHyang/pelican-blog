@@ -22,7 +22,6 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
 )
 # Social widget
 SOCIAL = (('My sina weibo', 'http://weibo.com/u/1644145160'),
