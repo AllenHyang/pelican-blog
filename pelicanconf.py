@@ -11,7 +11,6 @@ PATH = 'content'
 TIMEZONE = u'Asia/Shanghai'
 
 DEFAULT_LANG = u'zh'
-
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -34,3 +33,5 @@ DEFAULT_PAGINATION = 10
 THEME = 'themes/new-bootstrap2'
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 50
+PLUGIN_PATHS=["plugins"]
+PLUGINS = ["render_math"]
