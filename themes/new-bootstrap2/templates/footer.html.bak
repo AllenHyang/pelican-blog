@@ -1,0 +1,8 @@
+{% if FOOTER_NOTE %}
+<footer>
+    <address id="about">
+
+
+    </address><!-- /#about -->
+</footer>
+{% endif %}
