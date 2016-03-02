@@ -5,7 +5,7 @@
 import os,sys,subprocess
 
 argv=sys.argv;
-c=os.getcwd();
+base_dir=os.path.dirname(os.getcwd());
 def push_blog(cc,comment):
 	 
 	subprocess.call(["git","add","."],cwd=cc)
@@ -14,16 +14,16 @@ def push_blog(cc,comment):
 
 if len(argv)==1:
 	print "Pulling from github"
-	subprocess.call(["git","pull","origin","master"],cwd=c+"/pelican-blog")
+	subprocess.call(["git","pull","origin","master"],cwd=base_dir+"/pelican-blog")
 	
-	subprocess.call(["git","pull","origin","master"],cwd=c+"/allenhyang.github.io")
+	subprocess.call(["git","pull","origin","master"],cwd=base_dir+"/allenhyang.github.io")
 else:
 	try:
 		if argv[1]=="push" and argv[2]=="-m" and argv[3]:
 			print "Start to push to github"
 			print "Comments:"+argv[3]
-			push_blog(c+"/pelican-blog",argv[3])
-			push_blog(c+"/allenhyang.github.io",argv[3])			
+			push_blog(base_dir+"/pelican-blog",argv[3])
+			push_blog(base_dir+"/allenhyang.github.io",argv[3])			
 
 		else:
 			print "Wrong input"

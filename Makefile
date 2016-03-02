@@ -4,7 +4,8 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=/home/allen/blog/allenhyang.github.io
+OUTS=$(shell cd .. && pwd)
+OUTPUTDIR=$(OUTS)/allenhyang.github.io
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
