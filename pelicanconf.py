@@ -42,3 +42,11 @@ TAG_CLOUD_MAX_ITEMS = 50
 PLUGIN_PATHS=["plugins"]
 PLUGINS = ["render_math"]
 DUOSHUO_SITENAME = "Allen's blog"
+
+
+
+
+MD_EXTENSIONS = ['extra','toc']
+
+
+
