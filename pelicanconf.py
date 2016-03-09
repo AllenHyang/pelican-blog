@@ -43,7 +43,7 @@ PLUGIN_PATHS=["plugins"]
 PLUGINS = ["render_math"]
 DUOSHUO_SITENAME = "Allen's blog"
 
-
+RESPONSIVE_IMAGES=True
 
 
 MD_EXTENSIONS = ['extra','toc']
